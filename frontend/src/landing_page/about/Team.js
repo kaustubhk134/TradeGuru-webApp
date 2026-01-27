@@ -22,7 +22,7 @@ function Team() {
             <p>
                 He is the winner of GSEA – EO Nagpur 2025 and a multiple-time national-level champion across software, drone racing, and aircraft design competitions. Driven by a belief that strong infrastructure defines great products, Kaustubh continues to build TradeGuru with a long-term vision for India’s trading ecosystem.</p>
             <p>
-                Connect on <a href="">Homepage</a> /<a href="">LinkedIn</a> /<a href="">Website</a>
+                Connect on <a href="/">Homepage</a> /<a href="https://www.linkedin.com/in/kaustubhkulurkar/">LinkedIn</a> /<a href="https://linktr.ee/kaustubh134">Website</a>
             </p>
         </div>
       </div>
