@@ -9,7 +9,7 @@ import Footer from "../Footer";
 function PricingPage() {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       <CreateTicket />
     </>
   );
