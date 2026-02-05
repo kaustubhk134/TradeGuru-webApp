@@ -6,10 +6,14 @@ const app = express();
 const port = process.env.PORT || 3002;
 const uri = process.env.MONGO_URL;
 const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const cors = require("cors");
 
 const {HoldingsModel} = require("./model/HoldingsModel");
 const {PositionsModel} = require("./model/PositionsModel");
 
+app.use(cors());
+app.use(bodyParser.json());
 
 // app.get("/addHoldings", async(req, res) => {
 //     let tempHoldings = [
@@ -175,6 +179,16 @@ const {PositionsModel} = require("./model/PositionsModel");
 //     });
 //     res.send("Done")
 // })
+
+app.get("/allHoldings", async(req, res) => {
+    let allHoldings = await HoldingsModel.find({});
+    res.json(allHoldings);
+});
+
+app.get("/allPositions", async(req, res) => {
+    let allPositions = await PositionsModel.find({});
+    res.json(allPositions);
+});
 
 app.listen(port, () => {
     console.log(`Server is on port ${port}`);
