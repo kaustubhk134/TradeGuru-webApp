@@ -18,9 +18,6 @@ The application is architected with clear separation between presentation, busin
 - Environment Variables
 - Usage
 - Folder Structure
-- Engineering Highlights
-- Future Improvements
-- License
 
 ---
 
